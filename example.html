@@ -1,0 +1,22 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<script src="fakebook.js"></script>
+</head>
+<body style="background: #f0f0f0">
+	<div id="container" style="width: 600px; background: white;"></div>
+	<script>
+		(function dynamicallyLoadScript(url) {
+		    var script = document.createElement("script"); //Make a script DOM node
+		    script.src = "https://cdn.rawgit.com/Marak/faker.js/master/build/build/faker.min.js"; //Set it's src to the provided URL
+		    document.head.appendChild(script); //Add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
+			script.onload = function() {
+				document.getElementById("container").innerHTML = fakebook.generate([
+					"This is awesome!",
+					"I'm so glad I bought this bullshit product.",
+					"This totally changed my life for the better. Thank you so much! How can I donate?"
+				]);
+			};
+		})();
+	</script>
+</body>
