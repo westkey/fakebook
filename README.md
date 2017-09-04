@@ -1,3 +1,5 @@
+
+<img src="preview.jpg"/>
 <h1>Facebook comment generator</h1>
 <p>
   Hand tailored, copy/paste solution with CDN dependencies. 
@@ -28,4 +30,3 @@ Simply copy paste the following to your page and edit the variable myComments ho
     	})();
     </script>
     
-<img src="preview.jpg"/>
