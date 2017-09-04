@@ -1,6 +1,6 @@
 <h1>Facebook comment generator</h1>
 <p>
-  FOR EDUCATIONAL PURPOSES ONLY. Out of the box solution with copy/paste and CDN dependencies. 
+  FOR EDUCATIONAL PURPOSES ONLY. Hand tailored, copy/paste solution with CDN dependencies. 
   The links might break at some point, but who cares! Avatars and last names are fetched with faker.js. To prevent gender       issues I hardcoded some "gender neutral" first names (they are not perfect). Have fun!
 </p>
 <h2>Usage</h2>
