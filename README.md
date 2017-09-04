@@ -1,6 +1,7 @@
 
-<img src="preview.jpg"/>
 <h1>Facebook comment generator</h1>
+
+<img src="preview.jpg"/>
 <p>
   Hand tailored, copy/paste solution with CDN dependencies. 
   The links might break at some point, but who cares! Avatars and last names are fetched with faker.js. To prevent gender       issues I hardcoded some "gender neutral" first names (they are not perfect). Have fun! FOR EDUCATIONAL PURPOSES ONLY. 
