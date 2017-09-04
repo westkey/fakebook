@@ -1,22 +1,27 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<script src="fakebook.js"></script>
 </head>
 <body style="background: #f0f0f0">
-	<div id="container" style="width: 600px; background: white;"></div>
+	<div id="comments" style="width: 600px; background: white;"></div>
 	<script>
-		(function dynamicallyLoadScript(url) {
-		    var script = document.createElement("script"); //Make a script DOM node
-		    script.src = "https://cdn.rawgit.com/Marak/faker.js/master/build/build/faker.min.js"; //Set it's src to the provided URL
-		    document.head.appendChild(script); //Add it to the end of the head section of the page (could change 'head' to 'body' to add it to the end of the body section instead)
-			script.onload = function() {
-				document.getElementById("container").innerHTML = fakebook.generate([
-					"This is awesome!",
-					"I'm so glad I bought this bullshit product.",
-					"This totally changed my life for the better. Thank you so much! How can I donate?"
-				]);
-			};
+		var myComments = [
+			"This is awesome!",
+			"I'm so glad I bought this bullshit product.",
+			"This totally changed my life for the better. Thank you so much! How can I donate?"
+		];
+		(function load() {
+			var _fakebook = document.createElement("script");
+			_fakebook.src = "https://cdn.rawgit.com/vuoriov4/fakebook/master/fakebook.js";
+			document.head.appendChild(_fakebook);
+			_fakebook.onload = function() {
+				var _faker = document.createElement("script");
+			    _faker.src = "https://cdn.rawgit.com/Marak/faker.js/master/build/build/faker.min.js";
+			    document.head.appendChild(_faker);
+				_faker.onload = function() {
+					document.getElementById("comments").innerHTML = fakebook.generate(myComments);
+				};
+			}
 		})();
 	</script>
 </body>
