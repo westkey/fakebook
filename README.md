@@ -4,7 +4,8 @@
   The links might break at some point, but who cares! Avatars and last names are fetched with faker.js. To prevent gender       issues I hardcoded some "gender neutral" first names (they are not perfect). Have fun! FOR EDUCATIONAL PURPOSES ONLY. 
 </p>
 <h2>Usage</h2>
-Simply copy paste this stuff and edit the variable myComments however you like.
+Simply copy paste the following and edit the variable myComments however you like.
+
     <div id="comments" style="width: 600px; background: white;"></div>
     <script>
     	var myComments = [
