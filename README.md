@@ -1,6 +1,8 @@
 <h1>Facebook comment generator</h1>
 <p>
   Add credibility to your bullshit website with this out-of-the-box solution!
+  Avatars and last names are fetched with faker.js. 
+  To prevent gender issues I hardcoded some "gender neutral" first names. Have fun!
 </p>
 <h2>Usage</h2>
 
